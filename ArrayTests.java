@@ -7,6 +7,11 @@ public class ArrayTests {
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
+
+    // write a test to identify the problems in reverseInPlace()
+    int[] input2 = {3, 4, 5};
+    ArrayExamples.reverseInPlace(input2);
+    assertArrayEquals(new int[] {5, 4, 3}, input2);
 	}
 
 
@@ -14,5 +19,9 @@ public class ArrayTests {
   public void testReversed() {
     int[] input1 = { };
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+
+    // write a test to identify the problems in reversed()
+    int[] input2 = {10, 20, 30};
+    assertArrayEquals(new int[] {30, 20, 10}, ArrayExamples.reversed(input2));
   }
 }
